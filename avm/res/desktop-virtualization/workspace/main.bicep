@@ -1,4 +1,4 @@
-metadata name = 'Workspace'
+Fmetadata name = 'Workspace'
 metadata description = 'This module deploys an Azure Virtual Desktop Workspace.'
 
 @sys.description('Required. Name of the workspace.')
@@ -94,7 +94,7 @@ resource avmTelemetry 'Microsoft.Resources/deployments@2024-03-01' = if (enableT
   }
 }
 
-resource workspace 'Microsoft.DesktopVirtualization/workspaces@2022-10-14-preview' = {
+resource workspace 'Microsoft.DesktopVirtualization/workspaces@2024-04-03' = {
   name: name
   location: location
   tags: tags
